@@ -28,7 +28,7 @@ function drawBackground() {
 }
 
 function drawRunner() {
-  context.drawImage(runnerImage,50, 280);
+  context.drawImage(runnerImage,50, 280);//Orginal: 50,280
 }
 
 //Launch game........
