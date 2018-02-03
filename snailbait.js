@@ -21,6 +21,7 @@ function draw() {
   console.log('Draw function');
   drawBackground();
   drawRunner();
+  //console.trace();
 }
 
 function drawBackground() {
