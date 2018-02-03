@@ -1,12 +1,12 @@
-var canvas=document.getElementsById('snailbait-game-canvas'),
-  context=canvas.getContext(2d),
+var canvas=document.getElementById('snailbait-game-canvas'),
+  context=canvas.getContext('2d'),
 
   background=new Image(),
-  runnerImage=new Image():
+  runnerImage=new Image();
 
 function initalizeImages() {
   background.src='images/background.png';
-  runnerImage.src='images/runnger.png';
+  runnerImage.src='images/runner.png';
 
   background.onload=function(e){
     startGame();
@@ -18,6 +18,7 @@ function startGame() {
 }
 
 function draw() {
+  console.log('Draw function');
   drawBackground();
   drawRunner();
 }
